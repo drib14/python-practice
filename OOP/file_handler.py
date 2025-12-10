@@ -51,11 +51,15 @@ def load_records():
 
 
 def save_records(records):
-    """Save records to data.txt in formatted structure"""
+    """Save all records with START and END markers."""
     with open(FILE_PATH, "w") as file:
+        file.write("=== START OF RECORDS ===\n\n")
+
         for index, (student_id, data) in enumerate(records.items(), start=1):
             file.write(f"{index}.  First Name: {data['first_name']}\n")
             file.write(f"    Last Name : {data['last_name']}\n")
             file.write(f"    ID Number : {student_id}\n")
             file.write(f"    Age       : {data['age']}\n")
             file.write(f"    Course    : {data['course']}\n\n")
+
+        file.write("=== END OF RECORDS ===\n")
