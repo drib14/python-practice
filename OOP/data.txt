@@ -1,0 +1,12 @@
+1.  First Name: Drib
+    Last Name : Ramirez
+    ID Number : 1
+    Age       : 21
+    Course    : BSIT
+
+2.  First Name: Jeff
+    Last Name : Ramirez
+    ID Number : 2
+    Age       : 23
+    Course    : BSIT
+
